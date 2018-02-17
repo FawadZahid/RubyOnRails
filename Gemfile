@@ -24,6 +24,17 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 # for styling
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
+# for awsome fonts
+gem 'font-awesome-sass', '~> 4.5'
+# for extra styling and flash msgs
+gem 'bootstrap-sass-extras', '~> 0.0.2'
+# auto genration
+gem 'devise', '~> 3.5', '>= 3.5.6'
+# simpler forms
+gem 'simple_form', '~> 3.2', '>= 3.2.1'
+# for rails console
+
+gem 'rb-readline'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
