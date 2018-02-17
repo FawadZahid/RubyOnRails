@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+#sudo apt-get update
+#sudo apt-get install autoconf
+#sudo apt install libffi-dev
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.6'
@@ -33,7 +36,6 @@ gem 'devise', '~> 3.5', '>= 3.5.6'
 # simpler forms
 gem 'simple_form', '~> 3.2', '>= 3.2.1'
 # for rails console
-
 gem 'rb-readline'
 
 # Use ActiveModel has_secure_password
@@ -56,5 +58,13 @@ group :development do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+end
+
+group :production do
+    # for heroku
+    gem 'rails_12factor', '~> 0.0.3'
+    # sudo apt-get install libpq-dev
+    # postgre
+    gem 'pg', '~> 0.18.4'
 end
 
