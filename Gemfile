@@ -64,6 +64,12 @@ end
 group :production do
     # for heroku
     gem 'rails_12factor', '~> 0.0.3'
+    # wget -qO- https://cli-assets.heroku.com/install-ubuntu.sh -P usr/local/bundle/bin| sh
+    # heroku create
+    # heroku login
+    # heroku git:remote -a xtremers
+    # git push heroku master
+    
     # sudo apt-get install libpq-dev
     # postgre
     gem 'pg', '~> 0.18.4'
